@@ -11,13 +11,11 @@ function App() {
       .then((response) => response.json())
       .then((colors) => console.log(colors));
   }, [stateColor]);
-  console.log();
 
   return (
     <div className="App">
       <h1>Color Changer</h1>
       <TextField label="Enter Color" type="string" onChange={stateColor} />
-      <p></p>
     </div>
   );
 }
